@@ -215,7 +215,23 @@ void ZorkUL::teleport(Command command ){
         }
         else{cout << "invalid room" << endl;}
     }
-    else{/*inset random teleport*/}
+    else{
+        srand((unsigned) time(0));
+
+        map<string,Room *>::iterator it;
+        int i=-1;
+        int randomNumber = rand() % list_rooms.size();
+        it =list_rooms.begin();
+        while(it->second==list_rooms["_NULL"] || i< randomNumber ||it->second==currentRoom)
+        {
+            i=0;
+            randomNumber = rand() % list_rooms.size();
+            for(it =list_rooms.begin(); i<randomNumber && it != list_rooms.end() ; it++){i++;}
+
+        }
+        currentRoom=it->second;
+        cout << currentRoom->longDescription() << endl;
+    }
 }
 string ZorkUL::go(string direction) {
     //Make the direction lowercase
