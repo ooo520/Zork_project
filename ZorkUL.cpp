@@ -23,11 +23,11 @@ void ZorkUL::createRooms()  {
 
 
     a = new Room("a");
-        a->addItem(new Item("x", 1, 11));
-        a->addItem(new Item("y", 2, 22));
+    a->addItem(new Item("x", 1, 11));
+    a->addItem(new Item("y", 2, 22));
     b = new Room("b");
-        b->addItem(new Item("xx", 3, 33));
-        b->addItem(new Item("yy", 4, 44));
+    b->addItem(new Item("xx", 3, 33));
+    b->addItem(new Item("yy", 4, 44));
     c = new Room("c");
     d = new Room("d");
     e = new Room("e");
