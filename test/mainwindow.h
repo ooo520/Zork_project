@@ -4,10 +4,11 @@
 
 #include <QMainWindow>
 #include<QPushButton>
+#include <QEvent>
 #include <QKeyEvent>
 #include <QColor>
 #include <QPalette>
-
+#include <QTextEdit>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -26,7 +27,7 @@ private slots:
     void on_north_clicked();
     void on_east_clicked();
     void on_west_clicked();
-    void new_command(QKeyEvent *e);
+    void on_enter_pressed( );
 
 private:
     Ui::MainWindow *ui;
