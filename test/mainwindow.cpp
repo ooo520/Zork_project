@@ -79,6 +79,6 @@ void MainWindow::on_enter_pressed() {//this fonction will detecte the text in co
     if(s.size()!=0 &&  s.at(s.size()-1)=='\n') {
             ui->shell->setText( ui->commande_shell->toPlainText() +"\n" );
             ui->commande_shell->clear();}
-
-
 }
+
+

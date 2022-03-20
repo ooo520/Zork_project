@@ -14,9 +14,8 @@ private:
 
 public:
 	CommandWords();
-	bool isCommand(string aString);
+    bool isCommand(string aString);
     string all;
-
 };
 
 

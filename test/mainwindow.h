@@ -9,6 +9,11 @@
 #include <QColor>
 #include <QPalette>
 #include <QTextEdit>
+
+
+#include "Parser.h"
+
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE

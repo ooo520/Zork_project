@@ -118,6 +118,18 @@ bool ZorkUL::processCommand(Command command) {
 
     else if (commandWord.compare("map") == 0)
         {
+        string mapp="         [0]        \n"
+                    "          |         \n"
+                    "          |         \n"
+                    " [h] --- [f] --- [g]\n"
+                    "          |         \n"
+                    "          |         \n"
+                    " [c] --- [a] --- [b]\n"
+                    "          |         \n"
+                    "          |         \n"
+                    " [i] --- [d] --- [e]\n";
+        cout <<mapp<<endl;
+        /*
         cout << "        [0]        " << endl;
         cout << "         |         " << endl;
         cout << "         |         " << endl;
@@ -127,7 +139,7 @@ bool ZorkUL::processCommand(Command command) {
         cout << "[c] --- [a] --- [b]" << endl;
         cout << "         |         " << endl;
         cout << "         |         " << endl;
-        cout << "[i] --- [d] --- [e]" << endl;
+        cout << "[i] --- [d] --- [e]" << endl;*/
         }
 
     else if (commandWord.compare("go") == 0)
