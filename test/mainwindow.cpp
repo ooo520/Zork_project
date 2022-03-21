@@ -17,7 +17,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->commande_shell->setPalette(pal);
 
     c.setRgb(255,255,255,255);
-    ui->shell->setTextColor(c);ui->commande_shell->setTextColor(c);
+    ui->shell->setTextColor(c);
+    ui->commande_shell->setTextColor(c);
 
     push_button2 = new QPushButton(this);
     push_button_w = new QPushButton(this);

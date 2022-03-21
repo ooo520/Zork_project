@@ -1,19 +1,22 @@
 
 #ifndef ZORKUL_H_
 #define ZORKUL_H_
+#include <map>
+#include <iostream>
+#include <string>
 
 #include "Command.h"
 #include "Parser.h"
 #include "Room.h"
 #include "item.h"
-#include <map>
 
-#include <iostream>
-#include <string>
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 using namespace std;
 
 class ZorkUL {
 private:
+    MainWindow w;
     Parser parser;
     Room *currentRoom;
     void createRooms();
@@ -30,7 +33,7 @@ private:
 public:
     ZorkUL();
     map<string,Room *> list_rooms;
-    //void play();
+    void play();
     string go(string direction);
 };
 

@@ -12,7 +12,8 @@ int main() {
 
 
 ZorkUL::ZorkUL() {
-
+    MainWindow w;
+    //w.show();  to put in exe
     map<string,Room *> list_rooms;
     createRooms();
     bool finished = false;
@@ -84,29 +85,12 @@ void ZorkUL::createRooms()  {
 
 
 
-/**
- *  Main play routine.  Loops until end of play.
+//  Main play routine.  Loops until end of play.
 
 void ZorkUL::play() {
-    printWelcome();
-
-    // Enter the main command loop.  Here we repeatedly read commands and
-    // execute them until the ZorkUL game is over.
-
-    bool finished = false;
-    while (!finished) {
-        // Create pointer to command and give it a command.
-        Command* command = parser.getCommand();
-        // Pass dereferenced command and check for end of game.
-        finished = processCommand(*command);
-        // Free the memory allocated by "parser.getCommand()"
-        //   with ("return new Command(...)")
-        delete command;
-    }
-    cout << endl;
-    cout << "end" << endl;
+    w.show();
 }
-*/
+
 string ZorkUL::printWelcome() {
     return "start \n info for help";
 }

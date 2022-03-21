@@ -1,4 +1,5 @@
-#include "mainwindow.h"
+//#include "mainwindow.h"
+#include "ZorkUL.h"
 
 #include <QApplication>
 #include <QLocale>
@@ -17,7 +18,12 @@ int main(int argc, char *argv[])
             break;
         }
     }
+    /*
     MainWindow w;
     w.show();
+    */
+
+    ZorkUL game;
+    game.play();
     return a.exec();
 }
